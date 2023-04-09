@@ -18,7 +18,7 @@ public class Main {
             System.out.println("Задача 1");
             List<Integer> nums = new ArrayList<>(List.of(1, 1, 2, 3, 4, 4, 5, 5, 6, 7));
             for (int num : nums) {
-                if (num % 2 == 0) {
+                if (num % 2 != 0) {
                     System.out.print(num + " ");
                 }
             }
@@ -29,7 +29,7 @@ public class Main {
             List<Integer> nums = new ArrayList<>(List.of(1, 1, 32, 17, 2, 3, 10, 15, 22, 7, 31, 33, 9, 7, 4, 4, 5, 5, 6, 7));
             Set<Integer> numsSet = new TreeSet<>();
             for (int num : nums) {
-                if (num % 2 != 0) {
+                if (num % 2 == 0) {
                     numsSet.add(num);
                 }
             }
